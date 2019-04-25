@@ -52,4 +52,14 @@
 
 .section-title {
     font-size: 50px;
+    font-family: 'Lalezar', cursive;
+    margin: 0 !important;
+}
+
+#james {
+    color: #d4b830;
+}
+
+#slaby {
+    color: #f0db4f;
 }
