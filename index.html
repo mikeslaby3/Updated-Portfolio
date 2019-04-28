@@ -14,12 +14,16 @@
 
 <body>
 
-    <nav class="transparent z-depth-0">
-        <div class="nav-wrapper transparent">
-            <a href="#" data-target="slide-out" id="nav-mobile" class="left sidenav-trigger show-on-large"><i
-                    class="material-icons black-text">menu</i></a>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper transparent">
+                <a href="#" data-target="slide-out" id="nav-mobile" class="left sidenav-trigger show-on-large"><i
+                        class="material-icons black-text">menu</i></a>
+                <a href="#" class="right brand-logo"><img id="MJS-logo-nav" src="assets/images/MJS-Web-Design-Black.png"
+                        alt="MJS-logo-black"> </a>
+            </div>
+        </nav>
+    </div>
 
     <ul id="slide-out" class="sidenav">
         <li>
@@ -46,9 +50,11 @@
             <div class="divider"></div>
         </li>
         <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
-        <li><a class="waves-effect nav-button" href="#about-me"><i class="material-icons">account_circle</i>About Me</a></li>
-        <li><a class="waves-effect nav-button" href="#projects"><i class="material-icons">code</i>Projects</a></li>
-        <li><a class="waves-effect nav-button" href="#!"><i class="material-icons">markunread</i>Contact</a></li>
+        <li><a class="waves-effect nav-button" href="#goto-about-me"><i class="material-icons">account_circle</i>About Me</a>
+        </li>
+        <li><a class="waves-effect nav-button" href="#goto-projects"><i class="material-icons">code</i>Projects</a></li>
+        <li><a class="waves-effect nav-button" href="#goto-contact-me"><i class="material-icons">markunread</i>Contact</a>
+        </li>
     </ul>
 
     <!-- <div id="name-container" class="center">
@@ -60,14 +66,17 @@
         <div class="center">
             <img id="MJS-logo-white" src="assets/images/MJS-Web-Design-White.png" alt="white-logo">
         </div>
-    </div><br><br>
+    </div>
+
+    <div id="goto-about-me"></div><br><br><br>
 
     <div id="about-me" class="container">
+
         <div class="row">
             <p class="section-title">
-                Michael 
-                <span id="james">James</span>  
-                <span id="slaby">Slaby</span> 
+                Michael
+                <span id="james">James</span>
+                <span id="slaby">Slaby</span>
             </p>
             <hr class="header-line">
         </div>
@@ -94,6 +103,7 @@
 
     </div>
 
+    <div id="goto-projects"></div><br><br><br>
 
     <div id="projects" class="container">
 
@@ -101,7 +111,6 @@
             <span class="section-title">Projects</span>
             <hr class="header-line">
         </div>
-
 
         <div class="row">
             <div class="col s12 m6 l6">
@@ -190,90 +199,68 @@
             </div>
         </div>
 
-        <!-- <nav>
-        <div class="nav-wrapper white">
-            <a href="#" class="brand-logo"><i class="material-icons">code</i>MJS Web Design</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#intro">About Mike</a></li>
-                    <li><a href="badges.html">Projects</a></li>
-                    <li><a class="waves-effect waves-light btn">Contact Me</a></li>
-                </ul>
-            <ul id="slide-out" class="sidenav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="images/office.jpg">
-                        </div>
-                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div><br><br><br>
+
+    <div id="goto-contact-me"></div>
+
+    <div id="contact-me" class="container">
+
+        <div class="row">
+            <p class="section-title">
+                Contact
+                <span id="me">Me</span>
+            </p>
+            <hr class="header-line">
+        </div>
+
+        <div class="row">
+
+            <form id="contact-form" class="col s12">
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
                     </div>
-                </li>
-                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                <li><a href="#!">Second Link</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a class="subheader">Subheader</a></li>
-                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </nav>
-
-
-    <div class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br><br>
-                <h1 class="header center black-text text-lighten-2">Mike Slaby</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">Full Stack Web Developer</h5>
-                    <img src="assets/images/headshot.png" style="height:200px" alt="">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="phone_number" type="text" class="validate">
+                        <label for="phone_number">Phone</label>
+                    </div>
                 </div>
-                <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button"
-                        class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">markunread</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
                 </div>
-                <br><br>
-            </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+
+                <button id="contact-submit" class="right btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+
+            </form>
         </div>
-        <div class="parallax"><img src="assets/images/congruent_pentagon.png" style="height: 1500px"></div>
+
     </div>
 
-    <div id="intro" class="section white">
-        <div class="row container">
-            <div class="row">
-                <h2 class="header">Good Morning Vietnam!</h2>
-            </div>
-            <div class="row">
-                <div class="col l5">
-                    <img src="http://placehold.it/300x400" alt="placeholder-image">
-                </div>
-                <div class="col l7">
-                    <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                        architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                        dignissimos vel?</p>
-                    <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                        architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                        dignissimos vel?</p>
-                    <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                        architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                        dignissimos vel?</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="images/parallax2.jpg"></div>
-    </div> -->
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        <script type="text/javascript" src="assets/javascript/materialize.js"></script>
-        <script type="text/javascript" src="assets/javascript/main.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="assets/javascript/materialize.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
 </body>
 
 </html>

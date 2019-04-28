@@ -50,6 +50,11 @@
     height: 200px;
 }
 
+#MJS-logo-nav {
+    height: 45px;
+    margin-top: 8px;
+}
+
 .section-title {
     font-size: 50px;
     font-family: 'Lalezar', cursive;
@@ -62,4 +67,32 @@
 
 #slaby {
     color: #f0db4f;
+}
+
+#me {
+    color: #d4b830;
+}
+
+#contact-submit {
+    background-color: #d4b830;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #d4b830;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #d4b830;
+    box-shadow: 0 1px 0 0 #d4b830;
+}
+
+.input-field .prefix.active {
+    color: #d4b830;
+}
+
+#contact-form {
+    /* border: solid;
+    border-width: 1px;
+    padding: 30px; */
+    margin: 10px;
 }
