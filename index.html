@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/overwrite.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen|Lalezar" rel="stylesheet">
-    <title>MJS Web Design</title>
+    <title>MJS Web Development</title>
 </head>
 
 <body>
@@ -50,10 +50,12 @@
             <div class="divider"></div>
         </li>
         <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
-        <li><a class="waves-effect nav-button" href="#goto-about-me"><i class="material-icons">account_circle</i>About Me</a>
+        <li><a class="waves-effect nav-button" href="#goto-about-me"><i class="material-icons">account_circle</i>About
+                Me</a>
         </li>
         <li><a class="waves-effect nav-button" href="#goto-projects"><i class="material-icons">code</i>Projects</a></li>
-        <li><a class="waves-effect nav-button" href="#goto-contact-me"><i class="material-icons">markunread</i>Contact</a>
+        <li><a class="waves-effect nav-button" href="#goto-contact-me"><i
+                    class="material-icons">markunread</i>Contact</a>
         </li>
     </ul>
 
@@ -64,13 +66,17 @@
 
     <div id="cool-design-container">
         <div class="center">
-            <img id="MJS-logo-white" src="assets/images/MJS-Web-Design-White.png" alt="white-logo">
+            <img id="MJS-logo-white" src="assets/images/MJS-Web-Design-withtext.png" alt="white-logo">
         </div>
     </div>
 
     <div id="goto-about-me"></div><br><br><br>
 
     <div id="about-me" class="container">
+
+        <!-- center photo, put in circle? -->
+        <!-- center text below -->
+        <!-- use paralaxes to seperate sections -->
 
         <div class="row">
             <p class="section-title">
@@ -83,24 +89,40 @@
 
         <div class="row">
             <div class="col l5">
-                <img src="http://placehold.it/300x400" alt="placeholder-image">
+                <img class="circle" id="mike-portrait" src="./assets/images/mike-slaby-portrait.jpg" alt="professional-portrait">
             </div>
             <div class="col l7">
-                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                    dignissimos vel?</p>
-                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                    dignissimos vel?</p>
-                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
-                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
-                    dignissimos vel?</p>
+                <blockquote class="section-title grey-text">
+                    <h2>JavaScript Developer</h2>
+                    <h2>Boston Sports Enthusiast</h2>
+                    <h2>Aspiring Morning Person</h2>
+                </blockquote>
             </div>
         </div>
+        
+        <div class="row center-align">
+            <div class="col l8">
+                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
+                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
+                    dignissimos vel?</p>
+                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
+                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
+                    dignissimos vel?</p>
+                <p class="paragraph-font grey-text text-darken-3 lighten-3">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Repellat, placeat. Tenetur provident a praesentium asperiores esse quod
+                    architecto aliquam, dolorum reiciendis et nesciunt, sapiente veritatis dolores alias iusto
+                    dignissimos vel?</p>
+                <!-- Resume PDF Link - move to resume specific page -->
+                <span class="paragraph-font grey-text text-darken-3 lighten-3">Downloadable PDF available <a
+                        href="./assets/images/mike-slaby-resume.pdf" download="mikeslaby-resume">here</a></span>
+            </div>
+        </div>
+    </div>
 
+    <div class="parallax-container">
+        <div class="parallax"><img src="./assets/images/boston-mass.jpg"></div>
     </div>
 
     <div id="goto-projects"></div><br><br><br>
@@ -164,17 +186,17 @@
             <div class="col s12 m6 l6">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/office.jpg">
+                        <img class="activator" src="assets/images/movie-this.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i
+                        <span class="card-title activator grey-text text-darken-4">LIRI<i
                                 class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
+                        <p><a href="https://github.com/mikeslaby3/LIRI-Node-App">GitHub Repo</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i
+                        <span class="card-title grey-text text-darken-4">LIRI Node App<i
                                 class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.
+                        <p>LIRI is command line node.js application that takes in parameters and gives you back data. Similar to iPhone's SIRI, which is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. There are three categories of data you can pull from LIRI: song data from Spotify's API, movie data from the OMDB API, and concert data from the Bands in Town API.
                         </p>
                     </div>
                 </div>
@@ -219,14 +241,15 @@
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
+                        <i class="material-icons prefix">person</i>
                         <input id="name" type="text" class="validate">
-                        <label for="name">Name</label>
+                        <label for="name">Name *</label>
+                        <span class="helper-text" data-error="Name is required" data-success="right">First Name</span>
                     </div>
                     <div class="input-field col s6">
-                        <i class="material-icons prefix">phone</i>
                         <input id="phone_number" type="text" class="validate">
-                        <label for="phone_number">Phone</label>
+                        <label for="phone_number"></label>
+                        <span class="helper-text" data-error="Name is required" data-success="right">Last Name</span>
                     </div>
                 </div>
 
@@ -234,7 +257,15 @@
                     <div class="input-field col s12">
                         <i class="material-icons prefix">markunread</i>
                         <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                        <label for="email">Email *</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">subject</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Subject *</label>
                     </div>
                 </div>
 
@@ -242,11 +273,12 @@
                     <div class="input-field col s12">
                         <i class="material-icons prefix">mode_edit</i>
                         <textarea id="message" class="materialize-textarea"></textarea>
-                        <label for="message">Message</label>
+                        <label for="message">Message *</label>
                     </div>
                 </div>
 
-                <button id="contact-submit" class="right btn waves-effect waves-light" type="submit" name="action">Submit
+                <button id="contact-submit" class="right btn waves-effect waves-light" type="submit"
+                    name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
 
