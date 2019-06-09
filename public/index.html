@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/overwrite.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen|Lalezar" rel="stylesheet">
+    <title>MJS Web Development</title>
+</head>
+
+<body>
+
+    <!----------------->
+    <!-- TOP NAVBAR -->
+    <!----------------->
+
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper transparent">
+                <a href="#" data-target="slide-out" id="nav-mobile" class="left sidenav-trigger show-on-large"><i
+                        class="material-icons black-text">menu</i></a>
+                <a href="#" class="right brand-logo"><img id="MJS-logo-nav" src="./images/MJS-Web-Design-Black.png"
+                        alt="MJS-logo-black"> </a>
+            </div>
+        </nav>
+    </div>
+
+    <!----------------->
+    <!-- SIDE NAVBAR -->
+    <!----------------->
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="./images/connectwork.png">
+                </div>
+                <img class="circle" src="./images/Headshot Cropped.png">
+                <span class="white-text name">Mike Slaby</span>
+                <span class="white-text email">Full Stack JS Developer</span>
+            </div>
+        </li>
+        <li>
+            <div id="icon-container">
+                <a target="_blank" href="https://www.linkedin.com/in/mikeslaby3/"><img class="social-icon"
+                        src="./images/linkedin.png" alt="linkedin-icon"></a>
+                <a target="_blank" href="https://github.com/mikeslaby3"><img class="social-icon"
+                        src="./images/git-hub.png" alt="github-icon"></a>
+                <a target="_blank" href="https://stackoverflow.com/users/10999252/mikeslaby3"><img class="social-icon"
+                        src="./images/stack-overflow.png" alt="stack-overflow-icon"></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect nav-button" href="#goto-about-me"><i class="material-icons">account_circle</i>About
+                Me</a>
+        </li>
+        <li><a class="waves-effect nav-button" href="#goto-projects"><i class="material-icons">code</i>Projects</a></li>
+        <li><a class="waves-effect nav-button" href="#goto-contact-me"><i
+                    class="material-icons">markunread</i>Contact</a>
+        </li>
+    </ul>
+
+    <!--------------------->
+    <!-- MJS LOGO BANNER -->
+    <!--------------------->
+
+    <div id="cool-design-container">
+        <div class="center">
+            <img id="MJS-logo-white" src="./images/MJS-Web-Design-withtext.png" alt="white-logo">
+        </div>
+    </div>
+
+    <div id="goto-about-me"></div>
+    <br>
+    <br>
+    <br>
+
+    <!------------------------>
+    <!-- PROJECTS PORTFOLIO -->
+    <!------------------------>
+
+    <div id="projects" class="container">
+
+        <div class="row">
+            <span class="section-title">Projects</span>
+            <hr class="header-line">
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./images/avengers-game.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Eat Da Burger<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://tenthyoung.github.io/PizzaPresto/">Play Game</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Pizza Presto<i
+                                class="material-icons right">close</i></span>
+                        <p>This game was my first experience coding collaboratively with other programmers. We used the
+                            Materialize CSS Framework for the design of the game, JavaScript and jQuery for
+                            interactivity, AJAX calls to pull data from multiple API's, and Firebase to store high
+                            scores.</p>
+                        <p>I primarily worked on the JavaScript logic to create the functionality and scoring of the
+                            game. This included working with the Trivia API to populate the questions and answers when
+                            the game starts.</p>
+                        <p><a target="_blank" href="https://github.com/mikeslaby3/eat-da-burger">GitHub Repo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="portfolio-image activator" src="./images/avengers-game.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Sith Lord Finder<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://salty-castle-57532.herokuapp.com/">Find Your Match</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Star Wars Compatibility App<i
+                                class="material-icons right">close</i></span>
+                        <p>This game was a solo project I worked on using plain CSS for styling and JavaScript/jQuery
+                            for interactivity.</p>
+                        <p>The player uses a combination of memory and math to defeat Thanos. I enjoyed experimenting
+                            with modals and animations to bring this game to life.</p>
+                        <p><a target="_blank" href="https://github.com/mikeslaby3/sith-lord-finder">GitHub Repo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./images/avengers-game.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">LIRI<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://github.com/mikeslaby3/LIRI-Node-App">GitHub Repo</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">LIRI Node App<i
+                                class="material-icons right">close</i></span>
+                        <p>LIRI is command line node.js application that takes in parameters and gives you back data.</p>
+                        <p>Similar to iPhone's SIRI, which is a Speech Interpretation and Recognition Interface, LIRI
+                            is a Language Interpretation and Recognition Interface.</p> 
+                        <p>There are three categories of data you can pull from LIRI: song data from Spotify's API, movie 
+                            data from the OMDB API, and concert data from the Bands in Town API.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="portfolio-image activator" src="./images/avengers-game.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Bamazon<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://mikeslaby3.github.io/bamazon">GitHub Repo</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Bamazon Node App<i
+                                class="material-icons right">close</i></span>
+                        <p>Bamazon is a node.js application that utilizes mySQL and the node package "Inquirer" to
+                            create an Amazon-like storefront. 
+                        <p>There are two different modes, customer and manager. As a customer, the app takes in orders 
+                            and then depletes stock from the store's inventory stored in a mySQL database. As a manager, the app allows you to add new product to the store
+                            as well as replenish inventory.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./images/pizza-presto.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Pizza Presto<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://tenthyoung.github.io/PizzaPresto/">Play Game</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Pizza Presto<i
+                                class="material-icons right">close</i></span>
+                        <p>This game was my first experience coding collaboratively with other programmers. We used
+                            the
+                            Materialize CSS Framework for the design of the game, JavaScript and jQuery for
+                            interactivity, AJAX calls to pull data from multiple API's, and Firebase to store high
+                            scores.</p>
+                        <p>I primarily worked on the JavaScript logic to create the functionality and scoring of the
+                            game. This included working with the Trivia API to populate the questions and answers
+                            when
+                            the game starts.</p>
+                        <p><a target="_blank" href="https://github.com/tenthyoung/PizzaPresto">GitHub Repo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="portfolio-image activator" src="./images/avengers-game.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Avengers Game<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a target="_blank" href="https://mikeslaby3.github.io/Avengers-Game/">Play Game</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Infinity Stone Challenge<i
+                                class="material-icons right">close</i></span>
+                        <p>This game was a solo project I worked on using plain CSS for styling and
+                            JavaScript/jQuery
+                            for interactivity.</p>
+                        <p>The player uses a combination of memory and math to defeat Thanos. I enjoyed
+                            experimenting
+                            with modals and animations to bring this game to life.</p>
+                        <p><a target="_blank" href="https://github.com/mikeslaby3/Avengers-Game">GitHub Repo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!------------->
+    <!-- SCRIPTS -->
+    <!------------->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
