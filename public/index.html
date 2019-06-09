@@ -57,14 +57,11 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
-        <li><a class="waves-effect nav-button" href="#goto-about-me"><i class="material-icons">account_circle</i>About
-                Me</a>
+        <!-- <li><a href="#!"><i class="material-icons">home</i>Home</a></li> -->
+        <li><a class="waves-effect nav-button" href="/"><i class="material-icons">code</i>Projects</a></li>
+        <li><a class="waves-effect nav-button" href="/about"><i class="material-icons">account_circle</i>About Me</a>
         </li>
-        <li><a class="waves-effect nav-button" href="#goto-projects"><i class="material-icons">code</i>Projects</a></li>
-        <li><a class="waves-effect nav-button" href="#goto-contact-me"><i
-                    class="material-icons">markunread</i>Contact</a>
-        </li>
+        <li><a class="waves-effect nav-button" href="/contact"><i class="material-icons">markunread</i>Contact</a></li>
     </ul>
 
     <!--------------------->
@@ -155,10 +152,12 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">LIRI Node App<i
                                 class="material-icons right">close</i></span>
-                        <p>LIRI is command line node.js application that takes in parameters and gives you back data.</p>
+                        <p>LIRI is command line node.js application that takes in parameters and gives you back data.
+                        </p>
                         <p>Similar to iPhone's SIRI, which is a Speech Interpretation and Recognition Interface, LIRI
-                            is a Language Interpretation and Recognition Interface.</p> 
-                        <p>There are three categories of data you can pull from LIRI: song data from Spotify's API, movie 
+                            is a Language Interpretation and Recognition Interface.</p>
+                        <p>There are three categories of data you can pull from LIRI: song data from Spotify's API,
+                            movie
                             data from the OMDB API, and concert data from the Bands in Town API.</p>
                     </div>
                 </div>
@@ -177,10 +176,12 @@
                         <span class="card-title grey-text text-darken-4">Bamazon Node App<i
                                 class="material-icons right">close</i></span>
                         <p>Bamazon is a node.js application that utilizes mySQL and the node package "Inquirer" to
-                            create an Amazon-like storefront. 
-                        <p>There are two different modes, customer and manager. As a customer, the app takes in orders 
-                            and then depletes stock from the store's inventory stored in a mySQL database. As a manager, the app allows you to add new product to the store
-                            as well as replenish inventory.</p>
+                            create an Amazon-like storefront.
+                            <p>There are two different modes, customer and manager. As a customer, the app takes in
+                                orders
+                                and then depletes stock from the store's inventory stored in a mySQL database. As a
+                                manager, the app allows you to add new product to the store
+                                as well as replenish inventory.</p>
                     </div>
                 </div>
             </div>
@@ -250,7 +251,15 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script type="text/javascript" src="./js/materialize.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+
+            $(document).on('click', '.nav-button', function () {
+                $('.sidenav').sidenav('close');
+            });
+        });
+    </script>
 </body>
 
 </html>
