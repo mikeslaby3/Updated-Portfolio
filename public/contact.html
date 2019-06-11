@@ -96,46 +96,46 @@
 
         <div class="row">
 
-            <form action="/" method="POST" id="contact-form" class="col s12" role="form">
+            <form id="contact-form" class="col s12" role="form">
 
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons prefix">person</i>
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Name *</label>
-                        <span class="helper-text" data-error="Name is required">First Name</span>
+                        <input id="name" type="text" class="validate" required>
+                        <label for="name">First Name *</label>
+                        <span id="first-name-validate" class="helper-text" data-error="First name is required"></span>
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name"></label>
-                        <span class="helper-text">Last Name</span>
+                        <input id="last_name" type="text" class='validate' required>
+                        <label for="last_name">Last Name *</label>
+                        <span id="last-name-validate" class="helper-text" data-error="Last name is required"></span>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">markunread</i>
-                        <input id="email" type="email" class="validate">
+                        <input id="email" type="email" class="validate" required>
                         <label for="email">Email *</label>
-                        <span class="helper-text" data-error="Email is required"></span>
+                        <span class="helper-text" data-error="Please enter a valid email"></span>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">subject</i>
-                        <textarea id="subject" class="materialize-textarea"></textarea>
+                        <textarea id="subject" class="materialize-textarea validate" required></textarea>
                         <label for="subject">Subject *</label>
-                        <span class="helper-text" data-error="Subject is required"></span>
+                        <span id='subject-validate' class="helper-text" data-error="Subject is required"></span>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <textarea id="message" class="materialize-textarea validate" required></textarea>
                         <label for="message">Message *</label>
-                        <span class="helper-text" data-error="Message is required"></span>
+                        <span id='message-validate' class="helper-text" data-error="Message is required"></span>
                     </div>
                 </div>
 
@@ -143,6 +143,9 @@
                     name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
+
+                <span id='form-error'>All fields are required</span>
+                <span id="form-confirmation">I have recieved your contact info and will get back shortly!</span>
 
             </form>
         </div>
