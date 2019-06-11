@@ -77,7 +77,7 @@
     background-color: #d4b830;
 }
 
-.input-field input[type=text]:focus + label {
+/* .input-field input[type=text]:focus + label {
     color: #d4b830;
 }
 
@@ -88,6 +88,14 @@
 
 .input-field .prefix.active {
     color: #d4b830;
+} */
+
+#form-error {
+    color: #f44337;
+}
+
+#form-confirmation {
+    color: #4cae50;
 }
 
 #contact-form {
