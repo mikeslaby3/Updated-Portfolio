@@ -4,7 +4,6 @@ const PORT = process.env.PORT || 8050;
 const app = express();
 
 const db = require('./models');
-const nodemailer = require('nodemailer');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
