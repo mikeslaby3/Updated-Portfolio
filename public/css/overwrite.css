@@ -115,4 +115,30 @@
     text-decoration: underline;
 }
 
+#resume-container {
+    display: flex;
+    flex-direction: column;
+}
 
+#resume {
+    margin: auto;
+    border: solid;
+    border-width: 1.5px;
+    display: block;
+}
+
+#download-resume {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #cool-design-container {
+        display: none;
+    }
+
+    #resume {
+        width: 95%;
+    }
+}
